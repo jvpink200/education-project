@@ -1,0 +1,7 @@
+#Ignore node_Module folder
+node_modules
+
+
+.next/
+
+next.config.js
