@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import hpLearning from "../app/images/headphones-learning.jpg";
-import Card from "./components/cards";
+import Card from "./components/Cards";
 import data from "./data/data.json";
 export default function Home() {
   return (
