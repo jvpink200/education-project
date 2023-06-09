@@ -46,6 +46,27 @@ $color-white: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media all and (min-width: 1024px) {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      column-gap: 1rem;
+      .hpImg {
+        margin-top: 0;
+      }
+    }
+    &__education {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__modern,
+    .darkBtn {
+      flex: none;
+    }
+  }
 }
 
 .cards {
@@ -57,16 +78,21 @@ $color-white: #ffffff;
     "card" "card"
     "card" "card";
   padding-bottom: 1rem;
+  @media all and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 1rem;
+    column-gap: 1rem;
+  }
 }
 
-
-
-.card{
+.card {
   min-height: 18rem;
   width: 100%;
   margin-top: 1rem;
   padding: 2rem;
   display: flex;
+  margin-right: 8px;
   flex-direction: column;
   justify-content: space-evenly;
 }
