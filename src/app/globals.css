@@ -37,10 +37,9 @@ button {
 }
 
 .footer {
-  background-color: #3e588b;
+  color: #3e588b;
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 2rem;
-  color: white;
 }

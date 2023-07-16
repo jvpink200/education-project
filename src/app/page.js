@@ -4,9 +4,13 @@ import Footer from "./components/Footer";
 import hpLearning from "../app/images/headphones-learning.jpg";
 import Card from "./components/Cards";
 import data from "./data/data.json";
+import Courses from "./components/Courses";
+import NavBar from "./components/NavBar";
+
 export default function Home() {
   return (
     <>
+      <NavBar page="Home" />
       <main className={styles.wrapper}>
         <section className={styles.intro}>
           <div className={styles.intro__wrapper}>
@@ -41,6 +45,7 @@ export default function Home() {
             );
           })}
         </section>
+        <Courses />
       </main>
       <footer className="footer">
         <Footer />
