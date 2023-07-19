@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./css/page.module.scss";
+import styles from "./page.module.scss";
 import Footer from "./components/Footer";
 import hpLearning from "../app/images/headphones-learning.jpg";
 import Card from "./components/Cards";
