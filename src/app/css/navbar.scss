@@ -126,3 +126,13 @@
     }
   }
 }
+
+ul .active {
+  &-home,
+  &-about,
+  &-contact {
+    a {
+      color: #000;
+    }
+  }
+}

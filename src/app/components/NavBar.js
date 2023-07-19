@@ -2,10 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../images/study_icon.png";
-import "../navbar.scss";
-
+import "../css/navbar.scss";
 import { useState } from "react";
-export default function NavBar() {
+export default function NavBar({ page }) {
   const [menuStatus, setMenuStatus] = useState(false);
   function handleToggleMenu() {
     setMenuStatus(!menuStatus);
@@ -23,14 +22,14 @@ export default function NavBar() {
         </div>
       </div>
       <ul className={menuStatus ? "links menu-active" : "links menu-hidden"}>
-        <li>
+        <li className={page === "home" ? "active-home" : "home"}>
           <Link href="/">Home</Link>
         </li>
-        <li>
-          <Link href="/">About Us</Link>
+        <li className={page === "about" ? "active-about" : "about"}>
+          <Link href="/about">About Us</Link>
         </li>
-        <li>
-          <Link href="/">Contact Us</Link>
+        <li className={page === "contact" ? "active-contact" : "contact"}>
+          <Link href="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>

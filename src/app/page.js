@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.scss";
+import styles from "./css/page.module.scss";
 import Footer from "./components/Footer";
 import hpLearning from "../app/images/headphones-learning.jpg";
 import Card from "./components/Cards";
@@ -10,7 +10,7 @@ import NavBar from "./components/NavBar";
 export default function Home() {
   return (
     <>
-      <NavBar page="Home" />
+      <NavBar page="home" />
       <main className={styles.wrapper}>
         <section className={styles.intro}>
           <div className={styles.intro__wrapper}>
