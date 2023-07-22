@@ -5,9 +5,9 @@ $color-white: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   flex: 1;
   padding: 1rem 2rem 0;
+  min-height: 100vh;
   @media screen and (min-width: 900px) {
     padding: 0 5rem 0;
   }
@@ -65,9 +65,13 @@ $color-white: #ffffff;
   &__education {
     display: flex;
     flex-direction: column;
-    flex: 1;
     gap: 2rem;
-    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  &__content {
+    padding: 32px;
   }
 
   @media all and (min-width: 1024px) {
@@ -82,9 +86,14 @@ $color-white: #ffffff;
     }
     &__education {
       gap: 0;
+      align-items: start;
+      text-align: left;
       p {
         max-width: 500px;
       }
+    }
+    &__content {
+      padding: 0;
     }
     &__modern,
     .darkBtn {

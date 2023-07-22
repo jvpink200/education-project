@@ -19,7 +19,7 @@ export default function Home() {
                 <p>Modern & Fun</p>
               </div>
               <h1>Online Learning Education</h1>
-              <p>
+              <p className={styles.intro__content}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
