@@ -20,7 +20,11 @@ export default function Contact() {
               We want to hear from you! Contact us with any questions you may
               have and a representative will help you out shortly.
             </p>
-            <motion.button animate={{y: 50, x:50}} className="contact-btn" onClick={handleClick}>
+            <motion.button
+              animate={{ y: 50, x: 50 }}
+              className="contact-btn"
+              onClick={handleClick}
+            >
               contact us
             </motion.button>
           </div>
@@ -38,17 +42,7 @@ export default function Contact() {
               Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.
               Rhoncus dolor purus non enim praesent elementum facilisis leo.
             </p>
-            <button
-              className={`${styles.darkBtn} btn-r
-            
-            
-            
-            
-            
-            ead`}
-            >
-              Read More
-            </button>
+            <button className={`${styles.darkBtn} btn-read`}>Read More</button>
           </div>
           <div className="ed-light-blue"></div>
         </section>

@@ -25,9 +25,6 @@ export default function NavBar({ page }) {
         <li className={page === "home" ? "active-home" : "home"}>
           <Link href="/">Home</Link>
         </li>
-        <li className={page === "about" ? "active-about" : "about"}>
-          <Link href="/about">About Us</Link>
-        </li>
         <li className={page === "contact" ? "active-contact" : "contact"}>
           <Link href="/contact">Contact Us</Link>
         </li>
