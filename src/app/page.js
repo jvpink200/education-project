@@ -23,7 +23,6 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button className={styles.darkBtn}>Read More</button>
             </div>
             <div className={styles.hpImg}>
               <Image
