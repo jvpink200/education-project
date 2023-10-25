@@ -39,7 +39,7 @@ export default function Contact() {
               Rhoncus dolor purus non enim praesent elementum facilisis leo.
             </p>
           </div>
-          <div className="ed-light-blue"></div>
+          <div className="ed-light-gray"></div>
         </section>
       </main>
       <footer className="footer">
